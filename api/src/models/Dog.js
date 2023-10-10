@@ -8,9 +8,9 @@ module.exports = (sequelize) => {
     "dog",
     {
       id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
+        type: DataTypes.UUID, //identificador unico alfanumerico
         primaryKey: true, ///no acepta valores duplicados ni NULL.
+        defaultValue: DataTypes.UUIDV4
       },
 
       imagen: {
