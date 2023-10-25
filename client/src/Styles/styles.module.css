@@ -1,0 +1,229 @@
+body {
+  background-color: #fcfce3;
+}
+
+.landing_cont {
+  position: relative; /* Add relative positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Adjust alignment to left */
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.background_img {
+  background-image: url("https://todosdesdecero.com/wp-content/uploads/que-significa-ver-un-perro-negro-en-la-casa-de-noche.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Add absolute positioning to overlay content */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+.title {
+  z-index: 1; /* Bring the h1 to the front */
+  font-size: 600%;
+  margin-left: 100px;
+  color: #e3aa47;
+}
+
+.enter_button {
+  z-index: 1; /* Bring the button to the front */
+  margin-left: 100px;
+  height: 50px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+span {
+  color: red;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+
+.button-remove {
+  margin-left: 20px;
+}
+
+.button-remove:hover {
+  color: red;
+}
+
+/* CSS for the Cards component */
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* CSS for the Card component */
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffe3b4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #777;
+}
+
+.card h2:last-child {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.link_style {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* CSS for the Details component */
+.details {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffe3b4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.title_details {
+  font-size: 40px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.details h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* CSS for the SearchBar component */
+.search_bar {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search_bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  flex-grow: 1;
+  margin: 20px;
+}
+
+.search_bar button {
+  padding: 10px 20px;
+  background-color: #737ca1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.search_bar button:hover {
+  background-color: #737ca1;
+}
+
+/* CSS for the select elements */
+.select_filters {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  margin: 50px;
+}
+
+/* Pagination Styles */
+.button_pag {
+  background-color: #737ca1;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Input Styles */
+.input_pag {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 50px;
+  border-radius: 0;
+  margin: 5px;
+}
