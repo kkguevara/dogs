@@ -69,7 +69,7 @@ function rooReducer(state = initialState, action) {
 
     case FILTER_BY_TEMPERAMENTS:
       const dogsTemp = state.allDog.filter((dog) =>
-        dog.temperamentos.includes(action.payload)
+        dog.temperamentos?.includes(action.payload)
       );
       return {
         ...state,
